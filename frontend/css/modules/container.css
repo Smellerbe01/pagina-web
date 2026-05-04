@@ -1,0 +1,78 @@
+
+.video-container {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background: #000;
+    border: 1px solid #03ff14;
+    
+    /* Animación */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.video-container.show {
+    opacity: 1;             /* Se vuelve opaco */
+    visibility: visible;   /* Se vuelve interactivo */
+    transform: translateY(0); /* Sube a su posición original */
+}
+.hidden {
+    display: none !important;
+}
+
+.video-thumb {
+    width: 350px;           /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 4px;
+}
+
+.video-info {
+    display: flex;
+    flex-direction: column; /* El texto sigue estando uno sobre otro */
+    justify-content: center;
+    flex: 1;                /* Hace que el texto ocupe el espacio restante */
+}
+
+.playlist_container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre cada video */
+
+}
+#playlist_container .video-container {
+    padding: 10px; /* Menos relleno */
+    gap: 15px;      /* Menos espacio entre imagen y texto */
+    border-color: #00d5ffb3; /* Opcional: un color diferente (celeste) para distinguir la playlist */
+}
+
+#playlist_container .video-thumb {
+    width: 150px; /* Reducimos la imagen SOLO en la playlist */
+    height: auto;
+}
+
+#playlist_container h3 {
+    font-size: 1.1em; /* Título un poco más pequeño */
+}
+
+#playlist_container p {
+    font-size: 0.9em; /* Duración más pequeña */
+}
+
+/* Para que el botón de la playlist sea más discreto */
+#playlist_container .download-btn {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    width: auto; /* Que no ocupe todo el ancho */
+    margin-left: auto; /* Lo empuja a la derecha */
+}
+/* Ejemplo rápido */
+.card-buttons-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}

@@ -1,0 +1,18 @@
+### Obtener Info del Video
+POST http://127.0.0.1:8000/info/
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=x1ZtIVuHph0"
+}
+
+###
+
+### Descargar Audio
+POST http://127.0.0.1:8000/download/
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=x1ZtIVuHph0",
+    "type": "audio"
+}

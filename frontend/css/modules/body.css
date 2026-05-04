@@ -1,0 +1,9 @@
+body{
+    margin: 5px;
+    min-height: 100vh;
+    /* radial-gradient(forma tamaño at posición, color1, color2, color3) */
+    background: radial-gradient(circle, #0a2e0a 0%, #000000 100%);
+    min-height: 100vh;
+    background-attachment: fixed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

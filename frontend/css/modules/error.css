@@ -1,0 +1,32 @@
+.error-box {
+    display: flex;
+    flex-direction: column; /* 1. Pone el botón debajo del texto */
+    align-items: center;    /* 2. Centra horizontalmente todo el contenido */
+    justify-content: center; /* Centra verticalmente si hubiera altura fija */
+    
+    width: 60%;
+    margin: 20px auto;      /* Un poco de aire arriba y centrado en la página */
+    height: auto;
+    background-color: rgba(246, 3, 3, 0.141);
+    padding: 24px;
+    border: solid 3px #ff0501;   
+    color: #ffffff;
+    border-radius: 14px;
+}
+
+.error-button {
+    margin-top: 15px;      /* Espacio entre el texto y el botón */
+    width: fit-content;    /* Para que el botón no ocupe todo el ancho de la caja */
+    padding: 10px 40px;    /* Más ancho para que se vea mejor */
+    background-color: #ff0501;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.error-button:hover {
+    transform: scale(1.05); /* Un pequeño efecto al pasar el mouse */
+}

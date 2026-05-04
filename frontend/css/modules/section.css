@@ -1,0 +1,13 @@
+.main-section {
+    width: 60%;           /* Escala el ancho al 50% */
+    margin: 0px auto;  
+
+    background: linear-gradient(179deg,rgba(0, 0, 0, 0.178) 50%, rgba(3, 255, 20, 1) 94%);
+    height: auto;/* Escala la altura de la sección */
+    background-color: rgb(0, 0, 0);
+    max-width: 100%;/* Escala el ancho de la sección */
+    padding: 24px;
+    border-radius: 14px;
+    border:solid 3px #6bff01;   
+}
+

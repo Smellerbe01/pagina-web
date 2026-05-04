@@ -1,0 +1,58 @@
+.header-section {
+    background-color: #090909;
+    
+    margin-bottom: 20px;
+    width: 100%;
+}
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header-icon {
+    width: 180px;  
+    height: auto;
+    filter: drop-shadow(0 0 5px #03ff14); 
+    margin:0 0px 65px -55px;
+}
+
+h1 {
+    
+    /* 1. Hacemos que el texto sea un gradiente */
+    font-size: 100px;
+    font-weight: bold;
+    background: linear-gradient(
+        270deg, 
+        #03ff14, /* Verde neón */
+        #00d5ffb3, /* Celeste */
+        #7b00ff8e, /* Morado */
+        #03ff14  /* Cerramos con el mismo verde para un bucle infinito */
+    );
+    
+    /* 2. Hacemos que el fondo sea mucho más grande que el texto */
+    background-size: 100% 400%;
+    
+    /* 3. El truco: Recortamos el fondo para que solo se vea en las letras */
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    /* 4. Hacemos el color del texto transparente para que brille el fondo */
+    color: transparent;
+    
+    /* 5. Llamamos a la animación */
+    animation: auroraAnimation 8s ease infinite;
+}
+/* Definimos el movimiento de la aurora */
+@keyframes auroraAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

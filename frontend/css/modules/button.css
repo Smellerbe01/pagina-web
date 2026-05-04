@@ -1,0 +1,27 @@
+button {
+    font-weight: bold;
+    color: rgb(2, 255, 61);
+    background: rgb(0, 0, 0);
+    border: solid 3px rgb(250, 250, 250);
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin: 10px 0px 10px 0px;
+    display: block;
+    width: 100%;
+    transition: all 0.3s ease; /* Agrega una transición suave para el estado normal */
+}
+
+button:hover  {/* Cambia el color de fondo al pasar el mouse */
+    background-color: rgb(60, 255, 0); 
+    color: black ;
+    border: solid 3px rgb(0, 0, 0);
+    transition: all 0.3s ease; /* Agrega una transición suave */
+
+}
+
+button:active {
+    background-color:rgb(59, 180, 19); /* Cambia el color de fondo al hacer clic */
+
+}
+

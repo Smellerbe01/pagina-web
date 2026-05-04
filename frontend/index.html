@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descarga Videos</title>
+    <link rel="icon" type="image/x-icon" href="/frontend/assets/images/favicon.png">
+    <link rel="stylesheet" href="/frontend/css/styles.css" type="text/css" />
+</head>
+
+<body>
+    <section class="header-section">
+        <div class="header-container" > 
+            <h1>DOWNLOADER</h1>
+            <img src="/frontend/assets/images/gato.png" alt="icono" id="icono" class="header-icon">
+        </div>
+    </section>
+
+    <section class="main-section">
+
+        <div class="input-group">
+            <input id="url" style="font-size: medium" type="url" name="url" placeholder=" " required />
+
+            <label for="url" style="font-size: large">
+                URL
+                <img src="/frontend/assets/images/bongo.gif" id="icono" class="label-icon">
+            </label>
+        </div>
+
+        </button>
+        <button id="button_get_info" style="font-size: medium">
+            Obtener información
+        </button>
+
+
+        <div id="main_display">
+            <div id="video_card" class="video-container hidden">
+                <img id="video_thumbnail" width="200" />
+                <div class="video-info" id="video_info">
+                    <h3 id="video_title" style="color:rgb(2, 255, 61);"></h3>
+                    <p id="video_duration" style="color: rgb(248, 248, 248);"></p>
+                    <div class="card-buttons-container">
+                        <button class="download-video-btn" style="font-size: larger;"> Download video ▶ </button>
+                        <button class="download-audio-btn" style="font-size: larger;"> Download audio 🎵 </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="playlist_container" class="hidden"></div>
+        <p id="status"></p>
+
+        <div id="loading_container" class="hidden">
+            <div class="progress-bar">
+            <div id="progress_fill" class="progress-fill"></div>
+            </div>
+            <p style="color: #090909; text-align: center;">Cargando información...</p>
+        </div> 
+    </section>
+        
+        <div id="error-container" class="error-box hidden">
+            <p id="error-message">El enlace no es válido</p>
+            <button class="error-button" onclick="closeError()">Cerrar</button>
+        </div>
+
+    <script src="./js/app.js" defer></script>
+</body>
+
+</html>
+

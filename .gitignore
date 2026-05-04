@@ -1,0 +1,29 @@
+# Ignorar la carpeta de descargas
+downloads/*
+!downloads/.gitkeep
+
+# Ignorar archivos de configuración de IDEs
+.vscode/
+
+# Ignorar archivos de log
+*.log
+
+# Ignorar archivos de compilación
+build/
+
+# Ignorar el archivo .env
+.env
+
+# Ignorar archivos de dependencias
+node_modules/
+
+# ignora los cambios en el .json
+*settings.json
+
+
+venv/
+downloads/
+__pycache__/
+.env
+*.mp3
+*.webm

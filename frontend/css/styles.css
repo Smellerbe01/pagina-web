@@ -1,0 +1,10 @@
+/*margin-top , margin-right , margin-bottom y margin-left */
+
+@import url('./modules/body.css');
+@import url('./modules/header.css');
+@import url('./modules/section.css');
+@import url('./modules/input.css');
+@import url('./modules/button.css');
+@import url('./modules/loading.css');
+@import url('./modules/container.css');
+@import url('./modules/error.css');

@@ -20,10 +20,14 @@ node_modules/
 # ignora los cambios en el .json
 *settings.json
 
-
+# Ignorar archivos de entorno virtual
 venv/
-downloads/
+
+# Ignorar archivos de caché de Python
 __pycache__/
-.env
+
+# Ignorar archivos de audio y video
 *.mp3
 *.webm
+*.ogg
+*.wav

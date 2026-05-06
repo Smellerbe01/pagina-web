@@ -1,0 +1,23 @@
+/* frontend/css/modules/button-clear.css */
+.input-container {
+    position: relative; /* Necesario para posicionar el botón dentro */
+    display: flex;
+    align-items: center;
+}
+
+.clear-button {
+    position: absolute;
+    right: 10px;
+    background: black;
+    border: 2px solid white;
+    font-size: 40px;
+    cursor: pointer;
+    color: #888;
+    display: none; /* Se oculta por defecto */
+    transition: color 0.2s;
+}
+
+.clear-button:hover {
+    color: #f00; /* Se pone rojo al pasar el mouse */
+
+}

@@ -1,5 +1,6 @@
 const BASE_URL = "http://127.0.0.1:8000";
 
+
 document.getElementById("button_get_info")
 .addEventListener("click", obtenerInfo);
 

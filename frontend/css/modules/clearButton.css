@@ -6,9 +6,12 @@
 }
 
 .clear-button {
+    width: fit-content;
+    height: fit-content;
+
     position: absolute;
     right: 10px;
-    background: black;
+    background: white;
     border: 2px solid white;
     font-size: 40px;
     cursor: pointer;
@@ -21,3 +24,4 @@
     color: #f00; /* Se pone rojo al pasar el mouse */
 
 }
+

@@ -31,3 +31,9 @@ __pycache__/
 *.webm
 *.ogg
 *.wav
+
+#ignora los archivos de excalidraw
+.excalidraw
+
+#ignora la carpeta .vscode y todos sus archivos
+.vscode/
